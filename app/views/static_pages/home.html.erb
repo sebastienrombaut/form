@@ -1,0 +1,10 @@
+
+<% if user_signed_in? %>
+	Merci d'être inscrit-e <%= @user.email %>
+	<br>
+	<%= link_to "Log out ?", destroy_user_session_path, method: :delete%>
+
+
+<% else %>
+	<%= link_to "Go sign up", new_user_registration_path %>
+<% end %>

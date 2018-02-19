@@ -1,0 +1,54 @@
+<div class="w3-row">
+    <div id="uniform" class="w3-col" style="width:750px">
+        <h1>uniform</h1>
+        <p>Ensemble, l'inscription devient plus simple</p>
+
+        <hr>
+        <div id="field_1">
+          <%= image_tag("nike.png", :alt => "nike", size: "35x35") %><p>&nbsp; Just do it babe !</p>
+        </div>
+        <div id="field_2">
+          <%= image_tag("star.png", :alt => "star", size: "35x35") %><p>&nbsp; You rock <3</p>
+        </div>
+        <div id="field_3">
+          <%= image_tag("sun2.png", :alt => "sun", size: "35x35") %><p>&nbsp; Sun is shinning in Bali</p>
+        </div>
+
+    </div>
+    <div id="form" class="w3-rest">
+          <h4>Crée ton compte</h4>
+
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+          
+          <div class="field">
+           
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", id: "field_email", placeholder: "Adresse email" %>
+            
+          </div>
+        
+          <div class="field">
+            
+            <% if @minimum_password_length %>
+            
+            <% end %><br/>
+            <%= f.password_field :password, autocomplete: "off", id: "field_password", placeholder: "Mot de passe"%>
+          </div>
+          <br>
+
+          <div class="field">
+
+            <%= f.password_field :password_confirmation, autocomplete: "off", id: "field_password", placeholder: "Confirmation de mot de passe" %>
+          </div>
+          <br>
+
+          <div class="actions">
+            <%= f.submit "Inscris toi", class: "inscription"%>
+          
+          </div>
+        <% end %>
+        <div id="footer">
+          <%= button_to "Connecte toi", new_user_session_path, {method: :get, class: 'buttonto'} %>
+        </div>
+    </div>
+</div>
