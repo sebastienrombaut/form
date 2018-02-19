@@ -14,7 +14,6 @@
  *= require_self
  */
 
-@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
 #uniform {
 	background-color: #127AF1;
@@ -53,11 +52,17 @@ hr {
 	color: #8a8a8a;
 
 }
+#field_email {
+	background: url(person.png) no-repeat 97%;
+	background-size: 20px;
+	width: 100%;
+}
 
 
+#field_password {
+	background: url(locker.png) no-repeat 97%;
+	background-size: 20px;
 
-#field_email, #field_password {
-	background-image: url(asset-path("locker.png"));
 	width: 100%;
 }
 
