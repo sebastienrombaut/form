@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+#uniform {
+	background-color: #127AF1;
+	height: 100vh;
+	color: white;
+	padding: 20px;
+	padding-top: 80px;
+	font-size: 110%
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 50px;
+
+}
+
+#field_1, #field_2, #field_3 {
+	display: flex;
+
+}
+
+hr {
+    display: block;
+    height: 2px;
+    width: 18%;
+    border: 0;
+    border-top: 2px solid #17b2c5;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#form {
+	
+	padding: 20px;
+	padding-top: 100px;
+	color: #8a8a8a;
+
+}
+
+
+
+#field_email, #field_password {
+	background-image: url(asset-path("locker.png"));
+	width: 100%;
+}
+
+.inscription {
+    background-color: #127AF1;
+    color: white;
+    width: 100%; 
+    border-radius: 5px;
+    height: 50px; 
+    border: 0;
+}
+
+
+#footer {
+	background-color: #a9acbd;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 20%;
+	
+	color: white;
+	left: 750px;
+	
+
+}
+
+
+
+.buttonto {
+	background-color: #a9acbd;
+	color: white;
+	border: 0px;
+	padding-left: 300px;
+	padding-top: 60px;
+}
+
+
